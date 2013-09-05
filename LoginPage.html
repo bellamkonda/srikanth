@@ -1,0 +1,57 @@
+<!--Author: srikanth.B-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <!--which is supportable to the mobile density-->
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <!--formate of the file content-->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!--adding external css file (you can add more number of css files)-->
+    <link rel="stylesheet" href="cssfile.css">
+    <!--adding external Javascript file-->
+    <script src="jvascript.js" type="text/javascript"></script>
+    <!--adding JavaScript internally-->
+    <script>
+
+
+      /*  function startActivity(className) {
+            cordova.exec(function() {console.log("Success");}, function(e) {console.log("Error: "+e);}, "Activity", "start", [className]);
+        };
+
+        localStorage.lifecyclestatus = "";
+        localStorage.backgroundstatus = "";*/
+    </script>
+
+
+    <!--adding phonegap js externally-->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+</head>
+<body class="body_clr">
+<h1 class="h1_clr">Login Form</h1>
+<div class="div-cent">
+<form id="__center">
+
+   <h3 class="some">USER NAME:</h3> <input type="text" id="fname"><br>
+       <h3 class="some">PASSWORD:</h3> <input type="password" id="lname"><br>
+
+    <!--applying script inside the body-->
+    <script>
+        function changeColor()
+        {
+            document.getElementById('x').style.background="#FFBB33";
+            document.getElementById("__center").reset();
+
+        }
+    </script>
+    <!--<input id="y" type="button" onclick="validation_credentials()" value="SUBMIT" >-->
+    <input id="y" type="button" onclick="validation_credentials('com.srikanth.phonegap.DashBoard');" value="SUBMIT" >
+
+    <input id="x" type="button" onclick="changeColor()" value="RESET" >
+
+</form>
+</div>
+
+</body>
+</html>
